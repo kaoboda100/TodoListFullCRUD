@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name ="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="./style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <title>Todo list</title>
+
+    </head>
+
+    <body onload="displayTasks()">
+        <div class="wrapper">
+            <header>To Do List CRUD
+                <button class="lang"><i class="fa-solid fa-eye"></i></button>
+            </header>
+            <div class="inputbox">
+                    
+                <input type="text" placeholder="Enter New Task">
+
+                <input id ="index" type="hidden">
+                
+                <button class="add"><i class="fas fa-plus"></i></button>
+
+                <button class="update hidden disable" onclick="confirmEdit()"><i class="fa-solid fa-check fa-beat" style="color: #ffffff;"></i></i></button>
+
+            
+            </div>
+
+                <h4>Today's Tasks</h4>
+
+                <ul class="todoList">
+                    
+                    <li>Rush Ruins <i class="fa-solid fa-trash fa-bounce"></i></li>
+                    
+                    <li>Kill Ancient Guardian <i class="fa-solid fa-trash fa-bounce"></i></li>
+                    
+                    <li>Crafting all rune item <i class="fa-solid fa-trash fa-bounce"></i></li>
+                    
+                    <li>Back to the Sea <i class="fa-solid fa-trash fa-bounce"></i></li>
+
+                
+
+                </ul>
+            
+                <div class="footer">
+                    <span> You have pending Tasks</span>
+                    <button>Clear all <i class="fa-solid fa-trash"></i></button>
+                </div>
+
+
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
